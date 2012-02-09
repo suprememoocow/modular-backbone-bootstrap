@@ -1,16 +1,4 @@
-var express = require('express'),
-	Resource = require('express-resource');
-
-var app = express.createServer(express.logger());
-
-app.use(express.static(__dirname + '/public'));
-
-app.get('/', function(request, response) {
-  response.send('Hello World!');
-});
-
-app.resource('projects', 
-{
+return {
   index: function(req, res){
     res.send('forum index');
   },
@@ -24,7 +12,7 @@ app.resource('projects',
   },
 
   show: function(req, res){
-    res.send(req.project);
+    res.send('show forum ' + req.forum.title);
   },
 
   edit: function(req, res){
@@ -41,12 +29,7 @@ app.resource('projects',
 
   load: function(id, fn){
     process.nextTick(function(){
-      fn(null, { id: id, title: 'Ferrets' });
+      fn(null, { title: 'Ferrets' });
     });
   }
-});
-
-var port = process.env.PORT || 3000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+};

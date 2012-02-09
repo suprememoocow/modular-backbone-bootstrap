@@ -2,6 +2,7 @@
   "name": "node-example",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.7"
+    "express": "2.5.7",
+    "express-resource": "0.2.4" 
   }
 }
