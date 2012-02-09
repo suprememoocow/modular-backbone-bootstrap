@@ -5,7 +5,3 @@ body {
 .container>footer p {
 	text-align: center; /* center align it with the container */
 }
-
-#page {
-	display: none;
-}

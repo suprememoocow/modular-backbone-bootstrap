@@ -2,7 +2,8 @@ define([
   'underscore',
   'backbone'
 ], function(_, Backbone) {
-  var projectsModel = Backbone.Model.extend({
+  var ProjectsModel = Backbone.Model.extend({
+    urlRoot: "api/projects",
     defaults: {
       score: 10
     },
@@ -10,6 +11,6 @@ define([
     }
 
   });
-  return projectsModel;
 
+  return ProjectsModel;
 });

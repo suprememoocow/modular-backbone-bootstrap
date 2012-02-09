@@ -4,13 +4,13 @@ define([
   'backbone',
   'models/projects'
 ], function($, _, Backbone, projectsModel){
-  var projectsCollection = Backbone.Collection.extend({
+  var ProjectsCollection = Backbone.Collection.extend({
     model: projectsModel,
-    initialize: function(){
-
+    url: "api/wines",
+    initialize: function() {
     }
 
   });
 
-  return new projectsCollection;
+  return ProjectsCollection;
 });

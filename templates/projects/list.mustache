@@ -1,0 +1,33 @@
+
+
+
+
+<div class="page-header">
+	<h1>
+		Project List <small>What's Happening?</small>
+	</h1>
+</div>
+<div class="row">
+	<div class="span16">
+		<ul>
+	      {{#projects}}
+		   <li>{{name}} - {{score}}</li> 
+		  {{/projects}}
+		</ul>
+	</div>
+  </div>
+</div>
+<div class="row">
+    <div class="span3">
+    </div>
+    <div class="span9">
+      <form class="well">
+        <label>Add New Project</label>
+        <input type="text" class="span3" placeholder="Project name"> <span class="help-inline">Associated help text!</span>
+        <label class="checkbox">
+          <input type="checkbox"> Check me out
+        </label>
+        <button type="submit" class="btn add">Add</button>
+      </form>
+    </div>
+</div>	

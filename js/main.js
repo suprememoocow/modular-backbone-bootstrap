@@ -9,6 +9,7 @@ require.config({
     underscore: 'libs/underscore/underscore-min',
     backbone: 'libs/backbone/backbone-optamd3-min',
     text: 'libs/require/text',
+    mustache: 'libs/mustache/mustache',
     templates: '../templates'
   }
 

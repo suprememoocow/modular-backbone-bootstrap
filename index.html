@@ -9,27 +9,27 @@
 <meta charset="utf-8">
 
 <title>Modular Backbone Bootstrap</title>
-
+<!--
 <link rel="stylesheet" href="css/bootstrap.css">
+-->
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
 
 <script data-main="js/main" src="js/libs/require/require.js"></script>
 </head>
 <body>
-	<div class="topbar">
-		<div class="fill">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
 			<div class="container">
 				<a class="brand" href="#">Sample</a>
-				<ul class="nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#/projects">Projects</a></li>
-					<li><a href="#/users">Users</a></li>
-				</ul>
-				<form action="" class="pull-right">
-					<input class="input-small" type="text" placeholder="Username">
-					<input class="input-small" type="password" placeholder="Password">
-					<button class="btn" type="submit">Sign in</button>
-				</form>
+				<div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#/projects">Projects</a></li>
+            <li><a href="#/users">Users</a></li>
+          </ul>
+          </div>
 			</div>
 		</div>
 	</div>
@@ -38,21 +38,6 @@
       <div class="content" id="page">
       </div>
       
-      <!-- This is content displayed prior to the JS application starting -->
-      <div class="content" id="home">
-        <div class="page-header">
-          <h1>Welcome <small>Home</small></h1>
-        </div>
-        <div class="row">
-          <div class="span12">
-            <h2>Main content</h2>
-          </div>
-          <div class="span4">
-            <h3>Secondary content</h3>
-          </div>
-        </div>
-      </div>      
-
       <footer>
         <p>&copy; Company 2012</p>
       </footer>

@@ -2,16 +2,20 @@
 define([
   'jquery',
   'underscore',
-  'backbone'
-], function($, _, Backbone){
+  'backbone',
+  'mustache',
+  'text!templates/home/main.mustache'
+], function($, _, Backbone, Mustache, template){
+  var MainHomeView = Backbone.View.extend({    
+    render: function() {
+      var compiledTemplate = Mustache.render(template, { });
+      console.log("render: " + compiledTemplate);
 
-  var mainHomeView = Backbone.View.extend({
-    el: $("#page"),
-    
-    render: function(){
-      this.el.html($("#home").html());
+      $(this.el).html(compiledTemplate);
+      return this;
     }
     
   });
-  return new mainHomeView;
+
+  return MainHomeView;
 });
